@@ -35,4 +35,11 @@ public class TestPatternMatch {
         System.out.println("location at: "+ getLocation);
         Assert.assertEquals(phrase.indexOf("Tomiwa"), getLocation);
     }
+    
+    @Test public void testfindEveryPosition(){
+        String phrase = "tom tom tom";
+        String[] getLocation = b.findEveryPositionN(phrase, "tom");
+        System.out.println("location at: "+ java.util.Arrays.toString(getLocation));
+        Assert.assertEquals("048", String.join("", getLocation));
+    }
 }
