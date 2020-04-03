@@ -51,7 +51,6 @@ public class BruteForce {
                 if (j==pattern.length()-1)result.add(Integer.toString(i));
             }
         }
-        
         String [] convert = result.toArray( new String[result.size()]);
         return convert;
     }
